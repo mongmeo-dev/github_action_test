@@ -12,6 +12,10 @@ repositories {
     mavenCentral()
 }
 
+tasks.named("bootJar") {
+    archiveFileName = 'github_action_test.jar'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
